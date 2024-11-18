@@ -10,7 +10,7 @@ const projects: Project[] = [
         title: 'Physical 100 Encyclopedia',
         tech: 'React, NodeJS, Express, MySQL, Sass',
         description: 'A catalogue of all contestants and challenges in the Netflix series, Physical 100, designed for quick lookups',
-        link: 'https://github.com/jasfoong/physical-100-encyclopedia-client'
+        link: 'https://physical100encyclopedia.netlify.app/'
     },
     {
         title: 'Green Spaces of Vancouver',
