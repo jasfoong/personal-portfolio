@@ -1,8 +1,15 @@
+import React, { useState } from 'react'
 import ProjectTable from '../components/ProjectTable'
 
 const HomePage: React.FC = () => {
+    const [darkMode, setDarkMode] = useState(false)
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode)
+    }
+
     return (
-        <div className="bg-pastel-green min-h-screen font-sansMono">
+        <div className="min-h-screen font-sansMono">
             <header className="hidden lg:flex fixed top-0 left-0 right-0 flex-row justify-between items-center p-4 bg-white">
                 <h2 className="text-base md:text-sm tracking-wider font-sansMono"><a href="/">JASMINEFOONG.COM</a></h2>
                 <h2 className="text-base md:text-sm tracking-wider font-sansMono text-center mt-2 sm:mt-0">SOFTWARE DEVELOPER</h2>
@@ -17,8 +24,16 @@ const HomePage: React.FC = () => {
                         <img src="/email-iconbaandar.png" alt="Email" className="w-full h-full" />
                     </a>
                 </div>
+                <button
+                    onClick={toggleDarkMode}
+                    className="ml-4 p-2 bg-gray-300 text-sm text-black rounded-md hover:bg-gray-400 dark:bg-gray-700 dark:text-white"
+                >
+                    {darkMode ? 'Light Mode' : 'Dark Mode'}
+                </button>
             </header>
-            <main className="pt-20 pb-12 px-4 sm:px-8">
+            <main className={`pt-20 pb-12 px-4 sm:px-8 ${
+                    darkMode ? 'bg-black text-white' : 'bg-pastel-green text-black'
+            }`}>
                 <div className="text-center md:text-left mx-auto max-w-4xl my-40">
                     <h1 className="text-3xl sm:text-4xl mb-2 font-sans">I'M JASMINE</h1>
                     <h2 className="text-base sm:text-lg mb-4">Software developer in Canada.</h2>
