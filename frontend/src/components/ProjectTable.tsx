@@ -28,7 +28,7 @@ const projects: Project[] = [
 
 const ProjectTable: React.FC = () => {
     return (
-        <section className="py-4 md:py-4 rounded-lg mx-4 md:text-left mx-auto max-w-4xl my-40" id="projects">
+        <section className="py-4 md:py-4 rounded-lg md:text-left mx-auto max-w-4xl my-40" id="projects">
         <h2 className="text-2xl mb-4 font-sans text-center md:text-left">PROJECTS</h2>
         <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-black">
