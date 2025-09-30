@@ -9,7 +9,7 @@ const projects: Project[] = [
     {
         title: 'Physical 100 Encyclopedia',
         tech: 'React, NodeJS, Express, MySQL, Sass',
-        description: 'A catalogue of all contestants and challenges in the Netflix series, Physical 100, designed for quick lookups',
+        description: 'A catalogue of all contestants and challenges in the Netflix series: Physical 100',
         link: 'https://physical100encyclopedia.netlify.app/'
     },
     {
@@ -20,16 +20,10 @@ const projects: Project[] = [
     },
     {
         title: 'Personal Portfolio',
-        tech: 'React, TypeScript, Tailwind CSS',
+        tech: 'React, TypeScript, Tailwind',
         description: 'Single page app to showcase all my projects',
         link: 'https://jasminefoong.com/'
-    },
-    {
-        title: 'Sustainable Cities Substack',
-        tech: 'Substack',
-        description: 'My bi-weekly journal spotlighting interesting cases of sustainable urban development',
-        link: 'https://jasminefoong.substack.com/'
-    },
+    }
 ]
 
 const ProjectTable: React.FC = () => {
@@ -40,7 +34,7 @@ const ProjectTable: React.FC = () => {
             <table className="min-w-full divide-y divide-black">
                 <thead className="font-sansMono">
                     <tr>
-                        <th className="pr-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Project Title</th>
+                        <th className="pr-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Project</th>
                         <th className="pr-6 pl-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tech Stack</th>
                         <th className="pr-6 pl-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
                     </tr>
